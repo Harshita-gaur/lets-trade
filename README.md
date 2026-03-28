@@ -3,6 +3,7 @@
 ## 📌 Overview
 
 This project is a **Python-based Binance trading bot** that allows interaction with Binance Futures API, including fetching account data and placing orders programmatically.
+- Implemented validation for Binance minimum notional constraint to prevent invalid API calls
 
 📘 **Note:** The file `manual.txt` contains a detailed step-by-step guide explaining how this project was built, including setup, structure, and implementation flow.
 
