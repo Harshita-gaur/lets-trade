@@ -2,4 +2,4 @@ primetrade/
 venv/
 .env
 __pycache__/
-*.log
+trading_bot.log
