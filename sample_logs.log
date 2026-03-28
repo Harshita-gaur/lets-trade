@@ -1,0 +1,24 @@
+
+market order
+2026-03-29 00:48:41,660 - INFO - bot.client - Binance client initialized successfully
+2026-03-29 00:48:41,661 - INFO - bot.orders - Order Request: BTCUSDT BUY MARKET 0.002 None
+2026-03-29 00:48:42,066 - INFO - bot.orders - Order Response: {'orderId': 13002810344, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ98ca3b1c26481352c1fc1d', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1774725521955}
+==================================================
+limit order
+2026-03-29 00:49:10,938 - INFO - bot.client - Binance client initialized successfully
+2026-03-29 00:49:10,938 - INFO - bot.orders - Order Request: BTCUSDT SELL LIMIT 0.002 60000.0
+2026-03-29 00:49:11,443 - ERROR - bot.orders - Order Error: APIError(code=-4024): Limit price can't be lower than 63461.18.
+limit order
+2026-03-29 00:49:28,090 - INFO - bot.client - Binance client initialized successfully
+2026-03-29 00:49:28,091 - INFO - bot.orders - Order Request: BTCUSDT SELL LIMIT 0.002 70000.0
+2026-03-29 00:49:28,533 - INFO - bot.orders - Order Response: {'orderId': 13002811374, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJfbf1a1992a6012c13fbdc1', 'price': '70000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1774725568426}
+==================================================
+limit error order
+2026-03-29 00:50:35,026 - INFO - bot.client - Binance client initialized successfully
+2026-03-29 00:50:35,027 - INFO - bot.orders - Order Request: BTCUSDT SELL LIMIT 0.002 60000.0
+2026-03-29 00:50:35,448 - ERROR - bot.orders - Order Error: APIError(code=-4024): Limit price can't be lower than 63474.35.
+market order
+2026-03-29 00:51:22,958 - INFO - bot.client - Binance client initialized successfully
+2026-03-29 00:51:22,958 - INFO - bot.orders - Order Request: BTCUSDT BUY MARKET 0.002 None
+2026-03-29 00:51:23,455 - INFO - bot.orders - Order Response: {'orderId': 13002814161, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ7d6762e5fa1ce80c0a9584', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1774725683349}
+==================================================
