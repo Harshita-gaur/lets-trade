@@ -1,0 +1,143 @@
+==============================
+🚀 PROJECT FLOW – LETS TRADE
+==============================
+
+
+STEP 1: Project Initialization
+--------------------------------
+- Created root project folder named "Lets Trade"
+- This folder will contain all project files, scripts, and modules for the trading bot
+  🔹 Command used:
+    mkdir lets trade
+
+- Moved inside the project folder
+  🔹 Command used:
+    cd lets trade
+
+
+STEP 2: Environment Setup
+--------------------------------
+- Created a virtual environment to isolate project dependencies
+  🔹 Command used:
+    python -m venv primetrade
+
+- Activated the virtual environment
+  🔹 Command used:
+    primetrade\Scripts\activate
+
+
+STEP 3: Installed Dependencies
+--------------------------------
+- Installed required libraries for Binance API interaction and environment variable handling
+  🔹 Command used:
+    pip install python-binance python-dotenv
+
+- Saved all dependencies for reproducibility
+  🔹 Command used:
+    pip freeze > requirements.txt
+
+
+STEP 4: Environment Variables Setup
+--------------------------------
+- Created a .env file in the root folder
+- Stored API_KEY and SECRET_KEY securely
+- API keys were generated from Binance Futures Testnet:
+  https://testnet.binancefuture.com
+
+
+STEP 5: Tested Binance Connection
+--------------------------------
+- Created testconnection.py to verify API connectivity
+- Connected to Binance API using API key and secret
+- Verified connection by fetching account data
+  🔹 Command used:
+    python testconnection.py
+
+
+STEP 6: Build Binance Client Wrapper
+--------------------------------
+- Created a separate module "bot" to organize core logic
+  🔹 Command used:
+    mkdir bot
+
+- Navigated into the bot folder
+  🔹 Command used:
+    cd bot
+
+- Initialized it as a Python package
+  🔹 Command used:
+    type nul > __init__.py
+
+- Created client.py to build a wrapper around Binance client
+  (Helps in writing clean, reusable, and maintainable code)
+  🔹 Command used:
+    type nul > client.py
+
+- Created testclient.py in the root directory to test the wrapper
+  🔹 Command used:
+    type nul > testclient.py
+
+- Ran the test file to verify that the client wrapper works correctly
+  🔹 Command used:
+    python test_client.py
+
+
+STEP 7: Tested Order Placement
+--------------------------------
+- Created orders.py inside bot to handle order execution logic
+  🔹 Command used:
+    type nul > orders.py
+
+- Created testorders.py in root to test order placement functionality
+  🔹 Command used:
+    type nul > testorders.py
+
+- Placed a sample order using Binance Futures API by running the test file
+  🔹 Command used:
+    python test_order.py
+
+
+STEP 8: Input Validation (VERY IMPORTANT FOR SELECTION)
+--------------------------------
+- Created validators.py inside bot to validate inputs before placing orders
+  (Prevents errors like invalid quantity, symbol issues, etc.)
+  🔹 Command used:
+    type nul > validators.py
+
+- Updated testorders.py to include validation logic before executing trades
+
+
+STEP 9: Logging System Implementation
+--------------------------------
+- Created logging_config.py inside bot to handle logging setup
+  (Helps track trades, errors, and debugging info)
+  🔹 Command used:
+    type nul > logging_config.py
+
+- Integrated logging into testorders.py
+  (So every order execution gets recorded)
+
+- Ran the testorders.py file to verify logging is working
+  🔹 Command used:
+    python testorders.py
+
+- Checked the generated log file "trading_bot.log" in the root folder
+  (Confirmed that order details and logs are being stored correctly)
+
+
+STEP 10: CLI (Command Line Interface) Development
+--------------------------------
+- Created cli.py in the root folder
+  (Allows placing orders directly from terminal using arguments)
+  🔹 Command used:
+    type nul > cli.py
+
+- Tested CLI for MARKET order
+  (Executes instant buy/sell at market price)
+  🔹 Command used:
+    python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
+
+- Tested CLI for LIMIT order
+  (Executes order at a specified price)
+  🔹 Command used:
+    python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 70000
