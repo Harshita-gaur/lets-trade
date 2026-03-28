@@ -1,0 +1,5 @@
+primetrade/
+venv/
+.env
+__pycache__/
+*.log
